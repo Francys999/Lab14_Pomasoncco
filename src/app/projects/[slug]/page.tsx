@@ -86,7 +86,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             Tecnologías Utilizadas
           </h2>
           <div className="flex flex-wrap gap-2">
-            {project.technologies.map((tech) => (
+            {project.technologies.map((tech: string) => (
               <span
                 key={tech}
                 className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
